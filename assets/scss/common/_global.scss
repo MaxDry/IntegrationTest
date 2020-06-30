@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "montserrat";
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "heebo-regular";
+    src: url(../fonts/Heebo-Regular.ttf);
+}
+
+@font-face {
+    font-family: "heebo-bold";
+    src: url(../fonts/Heebo-Bold.ttf);
+}
+
+h1{
+    font-family: "montserrat";
+    color: white;
+    font-size: 56px !important;
+    margin-bottom: 20px !important;
+}
+
+h2{
+    font-family: "montserrat";
+    color: $secondary-color;
+    margin-bottom: 0 !important;
+}
+
+body{
+    margin: 0px;
+}
+
+.row {
+    margin: 0 !important;
+}
+
+//Responsive Mobile
+@media (max-width: 600px) {
+    h1{
+        font-size: 26px !important;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 28px !important;
+    }
+}

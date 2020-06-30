@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="row top_discover">
+        <div class="content_top col-md-6 col-sm-12">
+            <img src="assets/img/logo.png" alt="">
+            <div class="introduction">
+                <h1>Lorem ipsum dolor</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eos molestiae accusantium praesentium ad nemo.</p>
+                <a href=""><span>DÉCOUVRIR</span></a>
+            </div>
+        </div>
+        <div class="booking col-md-6 col-sm-12">
+            <div class="booking_card">
+                <h2>Réserver</h2>
+                <div class="booking_informations">
+                    <input placeholder="Nom" type="text">
+                    <input placeholder="Prénom" type="text">
+                    <input placeholder="Email" type="text">
+                </div>
+                <div class="booking_dateTime">
+                    <span>Date</span>
+                    <div class="booking_date">
+                        <img src="assets/img/calendar.png" alt="">
+                        <input type="date">
+                    </div>
+                </div>
+                <div class="booking_dateTime">
+                    <span class="booking_hours_title">Horaire</span>
+                    <ul id="time" class="booking_time">
+                        <li href="#"><a>12:00</a></li>
+                        <li href="#"><a>13:00</a></li>
+                        <li href="#"><a>14:00</a></li>
+                        <li href="#"><a>15:00</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Nombre de personne
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">1 personne</a>
+                      <a class="dropdown-item" href="#">2 personnes</a>
+                      <a class="dropdown-item" href="#">3 personnes</a>
+                    </div>
+                </div>
+                <a class="booking_validation" href=""><span>VALIDER</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="row hours">
+        <div class="picture col-md-6 col-sm-12">
+            <img class="picture_icon" src="assets/img/icone.png" alt="">
+            <img id="picture" class="picture_content visible" src="assets/img/visuel.png" alt="">
+        </div>
+        <div class="hours_global col-md-6 col-sm-12">
+            <div class="hours_card">
+                <div class="hours_title">
+                    <img src="assets/img/clock.png" alt="">
+                    <h2>Horaires d'ouverture</h2>
+                </div>
+                <div class="row">
+                    <div class="hours_block col-md-4">
+                        <div>
+                            <span class="hours_day">LUN</span>
+                            <div class="hours_content">
+                                <span>11h45-14h15</span>
+                                <span>18h30-22h30</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hours_block col-md-4">
+                        <div>
+                            <span class="hours_day">MAR</span>
+                            <div class="hours_content">
+                                <span>11h45-14h15</span>
+                                <span>18h30-22h30</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hours_block col-md-4">
+                        <div>
+                            <span class="hours_day">MER</span>
+                            <div class="hours_content">
+                                <span>11h45-14h15</span>
+                                <span>18h30-22h30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="hours_block col-md-4">
+                        <div>
+                            <span class="hours_day">JEU</span>
+                            <div class="hours_content">
+                                <span>11h45-14h15</span>
+                                <span>18h30-22h30</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hours_block col-md-4">
+                        <div>
+                            <span class="hours_day">VEN</span>
+                            <div class="hours_content">
+                                <span>11h45-14h15</span>
+                                <span>18h30-22h30</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hours_block col-md-4">
+                        <div>
+                            <span class="hours_day">SAM</span>
+                            <div class="hours_content">
+                                <span>11h45-14h15</span>
+                                <span>18h30-22h30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hours_sunday">
+                    <span id="closed">
+                        Fermé le dimanche.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_left">
+            <span class="footer_bold">CONTACT</span>
+            <span>(+33) 1 88 32 56 46</span>
+            <span>contact@gmail.com</span>
+        </div>
+        <div class="footer_right">
+            <span class="footer_bold">MENTIONS LÉGALES</span>
+            <span class="footer_bold">CRÉDITS</span>
+            <div class="footer_icons">
+                <a href=""><img src="assets/img/twitter.png" alt=""></a>
+                <a href=""><img src="assets/img/facebook.png" alt=""></a>
+                <a href=""><img src="assets/img/instagram.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,300 @@
+.top_discover{
+    background: linear-gradient($primary-color 66%, $background 40%);
+
+    .content_top{
+        padding: 4% 7%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        img{
+            width: 22%;
+            height: 6%;
+        }
+
+        .introduction{
+            font-family: "heebo-regular";
+            color: white;
+            width: 85%;
+            margin-top: 27%;
+
+            p{
+                font-size: 18px;
+                margin-bottom: 4rem;
+            }
+
+            a{
+                text-decoration: none;
+                border: 1px solid rgba(255, 255, 255, 0.842);
+                border-radius: 4px;
+                padding: 23px 80px;
+                transition: 0.2s;
+                margin-top: 50px;
+    
+                &:hover{
+                    background-color: rgb(2, 192, 176);
+                }
+    
+                span{
+                    font-size: 20px;
+                    font-family: "montserrat";
+                    color: white;
+                }
+            }
+        }
+    }
+    .booking{
+        flex: 0em;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        .booking_card{
+            margin-bottom: 5%;
+            padding: 6%;
+            margin-top: 20%;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            background-color: white;
+            width: 70%;
+            box-shadow: 6px 10px 31px -2px rgba(0, 0, 0, 0.192);
+
+            .booking_informations{
+                display: flex;
+                flex-direction: column;
+                margin-top: 30px;
+
+                input{
+                    margin: 1.5% 0px;
+                    padding: 10px 10px 10px 20px;
+                    border-radius: 5px;
+                    border: 1px solid rgb(221, 221, 221);
+                    transition: 0.2s;
+
+                    &:focus{
+                        background-color: rgba(0, 0, 0, 0.020);
+                        border-color: none !important;
+                        color: rgb(48, 48, 48);
+                        outline: none;
+                    }
+                }
+            }
+
+            ::placeholder{
+                font-size: 17px;
+                font-family: "heebo-bold";
+                color: rgb(221, 221, 221);
+            }
+
+            .booking_dateTime{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 4%;
+                margin-bottom: 3%;
+
+                span{
+                    font-family: "montserrat";
+                }
+                .booking_date{
+                    display: flex;
+                    align-items: center;
+                    width: 80%;
+
+                    img{
+                        height: 48px;
+                        border-radius: 5px 0 0 5px ;
+                        padding: 3%;
+                        background-color: rgb(218, 218, 218);
+                    }
+
+                    input{
+                        margin: 1.5% 0px;
+                        padding: 10px 10px 10px 20px;
+                        border-radius: 0 5px 5px 0  ;
+                        border: 1px solid rgb(221, 221, 221);
+                        transition: 0.2s;
+                        width: 100%;
+                        color: rgb(235, 235, 235);
+                        font-family: "heebo-bold";
+                        text-transform: uppercase;
+    
+                        &:focus{
+                            background-color: rgba(0, 0, 0, 0.010);
+                            border-color: none !important;
+                            color: rgb(48, 48, 48);
+                            outline: none;
+                        }
+                        
+                    }
+                }
+
+                .booking_time{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 80%;
+                    padding-left: 0;
+                    margin-bottom: 0;
+
+                    li{
+                        list-style-type:none;
+                        cursor: pointer;
+
+                        a{
+                            font-family: "heebo-bold";
+                            border: 1px solid #dddddd;
+                            border-radius: 5px;
+                            padding: 12px 25px;
+                            text-decoration: none;
+                            color: rgb(221, 221, 221);
+                        }
+
+                        &:hover{
+                            a{
+                                background-color: rgba(0, 0, 0, 0.020);
+                            }
+                        }
+                    }
+                    .active{
+                        a{
+                            
+                            transition: 0.2s;
+                            background-color: $secondary-color;
+                            color: white;
+                            border: 1px solid $secondary-color;
+
+                            &:hover{
+                                background-color: $secondary-color;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+
+            .dropdown{
+                margin-top: 6%;
+                margin-bottom: 6%;
+                height: 10%;
+
+                .btn-secondary{
+                    font-family: "heebo-bold";
+                    background-color: white;
+                    color: black;
+                    width: 100%;
+                    height: 70px;
+                }
+
+                .dropdown-menu{
+                    width: 100%;
+                }
+            }
+
+            .booking_validation{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $secondary-color;
+                border-radius: 5px;
+                padding: 5%;
+                margin-top: 3%;
+                text-decoration: none;
+                transition: 0.2s;
+
+                span{
+                    font-size: 20px;
+                    font-family: "montserrat";
+                    color: white;
+                }
+
+                &:hover{
+                    background-color: rgb(175, 119, 197);
+                }
+            }
+        }
+    }
+}
+
+
+//Responsive Mobile
+@media (max-width: 600px) {
+    .top_discover{
+        .content_top{
+            align-items: center;
+            margin-top: 35px;
+
+            img{
+                width: 40%;
+                height: 11%;
+            }
+
+            .introduction{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                a{
+                    margin-top: 0;
+                    padding: 15px 32px;
+                }
+
+                p{
+                    font-size: 15px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .booking{
+            .booking_card{
+                width: 95%;
+                padding: 10% 6% 12% 6%;
+
+                .booking_informations{
+                    input{
+                        margin: 3% 0px
+                    }
+                }
+
+                .booking_dateTime{
+                    .booking_hours_title{
+                        align-self: flex-start !important;
+                    }
+
+                    .booking_date{
+                        width: 74%;
+    
+                        img{
+                            padding: 5%;
+                        }
+    
+                        input{
+                            width: 79%;
+                        }
+                    }
+
+                    .booking_time{
+                        flex-wrap: wrap;
+                        width: 74%;
+                        height: 112px;
+
+                        li{
+                            width: 30%;
+
+                            a{
+                                padding: 10px 10px;
+                            }
+                        }
+                    }
+                }
+
+                .dropdown{
+                    .btn-secondary{
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}

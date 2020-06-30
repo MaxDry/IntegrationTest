@@ -1,0 +1,372 @@
+@font-face {
+  font-family: "montserrat";
+  src: url(../fonts/Montserrat-Bold.ttf); }
+
+@font-face {
+  font-family: "heebo-regular";
+  src: url(../fonts/Heebo-Regular.ttf); }
+
+@font-face {
+  font-family: "heebo-bold";
+  src: url(../fonts/Heebo-Bold.ttf); }
+
+h1 {
+  font-family: "montserrat";
+  color: white;
+  font-size: 56px !important;
+  margin-bottom: 20px !important; }
+
+h2 {
+  font-family: "montserrat";
+  color: #CC98E0;
+  margin-bottom: 0 !important; }
+
+body {
+  margin: 0px; }
+
+.row {
+  margin: 0 !important; }
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 26px !important;
+    text-align: center; }
+  h2 {
+    font-size: 28px !important; } }
+
+.top_discover {
+  background: linear-gradient(#00D3C3 66%, #F1F5F8 40%); }
+  .top_discover .content_top {
+    padding: 4% 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; }
+    .top_discover .content_top img {
+      width: 22%;
+      height: 6%; }
+    .top_discover .content_top .introduction {
+      font-family: "heebo-regular";
+      color: white;
+      width: 85%;
+      margin-top: 27%; }
+      .top_discover .content_top .introduction p {
+        font-size: 18px;
+        margin-bottom: 4rem; }
+      .top_discover .content_top .introduction a {
+        text-decoration: none;
+        border: 1px solid rgba(255, 255, 255, 0.842);
+        border-radius: 4px;
+        padding: 23px 80px;
+        transition: 0.2s;
+        margin-top: 50px; }
+        .top_discover .content_top .introduction a:hover {
+          background-color: #02c0b0; }
+        .top_discover .content_top .introduction a span {
+          font-size: 20px;
+          font-family: "montserrat";
+          color: white; }
+  .top_discover .booking {
+    flex: 0em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+    .top_discover .booking .booking_card {
+      margin-bottom: 5%;
+      padding: 6%;
+      margin-top: 20%;
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+      background-color: white;
+      width: 70%;
+      box-shadow: 6px 10px 31px -2px rgba(0, 0, 0, 0.192); }
+      .top_discover .booking .booking_card .booking_informations {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px; }
+        .top_discover .booking .booking_card .booking_informations input {
+          margin: 1.5% 0px;
+          padding: 10px 10px 10px 20px;
+          border-radius: 5px;
+          border: 1px solid #dddddd;
+          transition: 0.2s; }
+          .top_discover .booking .booking_card .booking_informations input:focus {
+            background-color: rgba(0, 0, 0, 0.02);
+            border-color: none !important;
+            color: #303030;
+            outline: none; }
+      .top_discover .booking .booking_card ::placeholder {
+        font-size: 17px;
+        font-family: "heebo-bold";
+        color: #dddddd; }
+      .top_discover .booking .booking_card .booking_dateTime {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 4%;
+        margin-bottom: 3%; }
+        .top_discover .booking .booking_card .booking_dateTime span {
+          font-family: "montserrat"; }
+        .top_discover .booking .booking_card .booking_dateTime .booking_date {
+          display: flex;
+          align-items: center;
+          width: 80%; }
+          .top_discover .booking .booking_card .booking_dateTime .booking_date img {
+            height: 48px;
+            border-radius: 5px 0 0 5px;
+            padding: 3%;
+            background-color: #dadada; }
+          .top_discover .booking .booking_card .booking_dateTime .booking_date input {
+            margin: 1.5% 0px;
+            padding: 10px 10px 10px 20px;
+            border-radius: 0 5px 5px 0;
+            border: 1px solid #dddddd;
+            transition: 0.2s;
+            width: 100%;
+            color: #ebebeb;
+            font-family: "heebo-bold";
+            text-transform: uppercase; }
+            .top_discover .booking .booking_card .booking_dateTime .booking_date input:focus {
+              background-color: rgba(0, 0, 0, 0.01);
+              border-color: none !important;
+              color: #303030;
+              outline: none; }
+        .top_discover .booking .booking_card .booking_dateTime .booking_time {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 80%;
+          padding-left: 0;
+          margin-bottom: 0; }
+          .top_discover .booking .booking_card .booking_dateTime .booking_time li {
+            list-style-type: none;
+            cursor: pointer; }
+            .top_discover .booking .booking_card .booking_dateTime .booking_time li a {
+              font-family: "heebo-bold";
+              border: 1px solid #dddddd;
+              border-radius: 5px;
+              padding: 12px 25px;
+              text-decoration: none;
+              color: #dddddd; }
+            .top_discover .booking .booking_card .booking_dateTime .booking_time li:hover a {
+              background-color: rgba(0, 0, 0, 0.02); }
+          .top_discover .booking .booking_card .booking_dateTime .booking_time .active a {
+            transition: 0.2s;
+            background-color: #CC98E0;
+            color: white;
+            border: 1px solid #CC98E0; }
+            .top_discover .booking .booking_card .booking_dateTime .booking_time .active a:hover {
+              background-color: #CC98E0; }
+      .top_discover .booking .booking_card .dropdown {
+        margin-top: 6%;
+        margin-bottom: 6%;
+        height: 10%; }
+        .top_discover .booking .booking_card .dropdown .btn-secondary {
+          font-family: "heebo-bold";
+          background-color: white;
+          color: black;
+          width: 100%;
+          height: 70px; }
+        .top_discover .booking .booking_card .dropdown .dropdown-menu {
+          width: 100%; }
+      .top_discover .booking .booking_card .booking_validation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #CC98E0;
+        border-radius: 5px;
+        padding: 5%;
+        margin-top: 3%;
+        text-decoration: none;
+        transition: 0.2s; }
+        .top_discover .booking .booking_card .booking_validation span {
+          font-size: 20px;
+          font-family: "montserrat";
+          color: white; }
+        .top_discover .booking .booking_card .booking_validation:hover {
+          background-color: #af77c5; }
+
+@media (max-width: 600px) {
+  .top_discover .content_top {
+    align-items: center;
+    margin-top: 35px; }
+    .top_discover .content_top img {
+      width: 40%;
+      height: 11%; }
+    .top_discover .content_top .introduction {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .top_discover .content_top .introduction a {
+        margin-top: 0;
+        padding: 15px 32px; }
+      .top_discover .content_top .introduction p {
+        font-size: 15px;
+        text-align: center; }
+  .top_discover .booking .booking_card {
+    width: 95%;
+    padding: 10% 6% 12% 6%; }
+    .top_discover .booking .booking_card .booking_informations input {
+      margin: 3% 0px; }
+    .top_discover .booking .booking_card .booking_dateTime .booking_hours_title {
+      align-self: flex-start !important; }
+    .top_discover .booking .booking_card .booking_dateTime .booking_date {
+      width: 74%; }
+      .top_discover .booking .booking_card .booking_dateTime .booking_date img {
+        padding: 5%; }
+      .top_discover .booking .booking_card .booking_dateTime .booking_date input {
+        width: 79%; }
+    .top_discover .booking .booking_card .booking_dateTime .booking_time {
+      flex-wrap: wrap;
+      width: 74%;
+      height: 112px; }
+      .top_discover .booking .booking_card .booking_dateTime .booking_time li {
+        width: 30%; }
+        .top_discover .booking .booking_card .booking_dateTime .booking_time li a {
+          padding: 10px 10px; }
+    .top_discover .booking .booking_card .dropdown .btn-secondary {
+      height: 50px; } }
+
+.hours {
+  background-color: #F1F5F8;
+  padding-top: 10% !important;
+  padding-bottom: 8%; }
+  .hours .picture {
+    position: relative; }
+    .hours .picture .picture_icon {
+      position: absolute;
+      top: -35px;
+      left: 199px;
+      z-index: 3;
+      height: 50px; }
+    .hours .picture .picture_content {
+      box-shadow: 6px 10px 31px -2px rgba(0, 0, 0, 0.192);
+      top: -184px;
+      height: 700px;
+      z-index: 2;
+      position: absolute;
+      border-radius: 2%; }
+    .hours .picture .invisible {
+      left: -800px; }
+    .hours .picture .visible {
+      left: 238px; }
+  .hours .hours_card {
+    width: 85%;
+    padding: 11% 6%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 6px 10px 31px -2px rgba(0, 0, 0, 0.192); }
+    .hours .hours_card .hours_title {
+      display: flex;
+      align-items: center;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      padding-left: 9%; }
+      .hours .hours_card .hours_title img {
+        height: 23px;
+        margin-right: 12px; }
+    .hours .hours_card .row {
+      margin-top: 6% !important;
+      margin-bottom: 5% !important; }
+      .hours .hours_card .row .hours_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .hours .hours_card .row .hours_block .hours_day {
+          font-family: "montserrat";
+          color: #00D3C3; }
+        .hours .hours_card .row .hours_block .hours_content {
+          display: flex;
+          flex-direction: column;
+          margin-top: 12px;
+          color: #111111;
+          font-family: "heebo-bold"; }
+    .hours .hours_card .hours_sunday {
+      padding-left: 10%; }
+      .hours .hours_card .hours_sunday span {
+        font-family: "heebo-regular";
+        color: #3f3f3f; }
+
+@media (max-width: 600px) {
+  .hours .picture .picture_icon {
+    top: 113px;
+    left: 25px; }
+  .hours .picture .picture_content {
+    top: 60px;
+    left: 55px;
+    border-radius: 6%;
+    height: 260px; }
+  .hours .hours_global {
+    display: flex;
+    justify-content: center;
+    padding-top: 290px; }
+    .hours .hours_global .hours_card {
+      width: 95%; }
+      .hours .hours_global .hours_card .hours_title {
+        padding-top: 30%;
+        padding-bottom: 10%; }
+      .hours .hours_global .hours_card .row {
+        margin: 0px !important; }
+        .hours .hours_global .hours_card .row .hours_block {
+          padding: 5%; }
+          .hours .hours_global .hours_card .row .hours_block .hours_day {
+            font-size: 19px; }
+          .hours .hours_global .hours_card .row .hours_block .hours_content {
+            font-family: "heebo-regular";
+            font-size: 19px; }
+      .hours .hours_global .hours_card .hours_sunday {
+        display: flex;
+        justify-content: center;
+        padding: 15px 0px; } }
+
+footer {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00D3C3;
+  padding: 20px 0px; }
+  footer .footer_bold {
+    font-size: 15px;
+    font-family: "montserrat"; }
+  footer .footer_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "heebo-regular";
+    color: white;
+    height: 58%;
+    margin-left: 8%;
+    font-size: 15px; }
+  footer .footer_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    color: white;
+    height: 58%;
+    margin-right: 8%; }
+    footer .footer_right .footer_icons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 5px;
+      margin-left: 35%; }
+
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column; }
+    footer .footer_left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 25px 0px;
+      margin-left: 0; }
+    footer .footer_right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 0;
+      padding: 25px 0px; }
+      footer .footer_right .footer_icons {
+        margin-top: 35px;
+        width: 70%;
+        margin-left: 0; } }
