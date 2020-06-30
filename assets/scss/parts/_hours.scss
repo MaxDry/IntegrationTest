@@ -1,12 +1,12 @@
-.hours{
+.hours {
     background-color: $background;
     padding-top: 10% !important;
     padding-bottom: 8%;
 
-    .picture{
+    .picture {
         position: relative;
 
-        .picture_icon{
+        .picture_icon {
             position: absolute;
             top: -35px;
             left: 199px;
@@ -14,7 +14,7 @@
             height: 50px;
         }
 
-        .picture_content{
+        .picture_content {
             box-shadow: 6px 10px 31px -2px rgba(0, 0, 0, 0.192);
             top: -184px;
             height: 700px;
@@ -23,23 +23,23 @@
             border-radius: 2%;
         }
 
-        .invisible{
+        .invisible {
             left: -800px;
         }
 
-        .visible{
+        .visible {
             left: 238px;
         }
     }
 
-    .hours_card{
+    .hours_card {
         width: 85%;
         padding: 11% 6%;
         border-radius: 10px;
         background-color: white;
         box-shadow: 6px 10px 31px -2px rgba(0, 0, 0, 0.192);
 
-        .hours_title{
+        .hours_title {
             display: flex;
             align-items: center;
             padding-top: 2%;
@@ -52,19 +52,19 @@
             }
         }
 
-        .row{
+        .row {
             margin-top: 6% !important;
             margin-bottom: 5% !important;
-            .hours_block{
+            .hours_block {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                .hours_day{
+                .hours_day {
                     font-family: "montserrat";
                     color: $primary-color;
                 }
 
-                .hours_content{
+                .hours_content {
                     display: flex;
                     flex-direction: column;
                     margin-top: 12px;
@@ -74,10 +74,10 @@
             }
         }
 
-        .hours_sunday{
+        .hours_sunday {
             padding-left: 10%;
 
-            span{
+            span {
                 font-family: "heebo-regular";
                 color: #3f3f3f;
             }
@@ -86,17 +86,16 @@
 }
 
 //Responsive Mobile
-@media (max-width: 600px) {
-    .hours{
-
-        .picture{
+@media (max-width: 768px) {
+    .hours {
+        .picture {
             
-            .picture_icon{
+            .picture_icon {
                 top: 113px;
                 left: 25px;
             }
 
-            .picture_content{
+            .picture_content {
                 top: 60px;
                 left: 55px;
                 border-radius: 6%;
@@ -104,36 +103,37 @@
             }
         }
 
-        .hours_global{
+        .hours_global {
             display: flex;
             justify-content: center;
             padding-top: 290px;
 
-            .hours_card{
+            .hours_card {
                 width: 95%;
+                margin-bottom: 12%;
 
-                .hours_title{
+                .hours_title {
                     padding-top: 30%;
                     padding-bottom: 10%;
                 }
 
-                .row{
+                .row {
                     margin: 0px !important;
 
-                    .hours_block{
+                    .hours_block {
                         padding: 5%;
 
-                        .hours_day{
+                        .hours_day {
                             font-size: 19px;
                         }
-                        .hours_content{
+                        .hours_content {
                             font-family: "heebo-regular";
                             font-size: 19px;
                         }
                     }
                 }
 
-                .hours_sunday{
+                .hours_sunday {
                     display: flex;
                     justify-content: center;
                     padding: 15px 0px;

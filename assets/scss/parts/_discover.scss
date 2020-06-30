@@ -1,29 +1,29 @@
-.top_discover{
+.top_discover {
     background: linear-gradient($primary-color 66%, $background 40%);
 
-    .content_top{
+    .content_top {
         padding: 4% 7%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
 
-        img{
+        img {
             width: 22%;
             height: 6%;
         }
 
-        .introduction{
+        .introduction {
             font-family: "heebo-regular";
             color: white;
             width: 85%;
             margin-top: 27%;
 
-            p{
+            p {
                 font-size: 18px;
                 margin-bottom: 4rem;
             }
 
-            a{
+            a {
                 text-decoration: none;
                 border: 1px solid rgba(255, 255, 255, 0.842);
                 border-radius: 4px;
@@ -31,11 +31,11 @@
                 transition: 0.2s;
                 margin-top: 50px;
     
-                &:hover{
+                &:hover {
                     background-color: rgb(2, 192, 176);
                 }
     
-                span{
+                span {
                     font-size: 20px;
                     font-family: "montserrat";
                     color: white;
@@ -43,12 +43,12 @@
             }
         }
     }
-    .booking{
+    .booking {
         flex: 0em;
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        .booking_card{
+        .booking_card {
             margin-bottom: 5%;
             padding: 6%;
             margin-top: 20%;
@@ -59,19 +59,19 @@
             width: 70%;
             box-shadow: 6px 10px 31px -2px rgba(0, 0, 0, 0.192);
 
-            .booking_informations{
+            .booking_informations {
                 display: flex;
                 flex-direction: column;
                 margin-top: 30px;
 
-                input{
+                input {
                     margin: 1.5% 0px;
                     padding: 10px 10px 10px 20px;
                     border-radius: 5px;
                     border: 1px solid rgb(221, 221, 221);
                     transition: 0.2s;
 
-                    &:focus{
+                    &:focus {
                         background-color: rgba(0, 0, 0, 0.020);
                         border-color: none !important;
                         color: rgb(48, 48, 48);
@@ -80,35 +80,35 @@
                 }
             }
 
-            ::placeholder{
+            ::placeholder {
                 font-size: 17px;
                 font-family: "heebo-bold";
                 color: rgb(221, 221, 221);
             }
 
-            .booking_dateTime{
+            .booking_dateTime {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 margin-top: 4%;
                 margin-bottom: 3%;
 
-                span{
+                span {
                     font-family: "montserrat";
                 }
-                .booking_date{
+                .booking_date {
                     display: flex;
                     align-items: center;
                     width: 80%;
 
-                    img{
+                    img {
                         height: 48px;
                         border-radius: 5px 0 0 5px ;
                         padding: 3%;
                         background-color: rgb(218, 218, 218);
                     }
 
-                    input{
+                    input {
                         margin: 1.5% 0px;
                         padding: 10px 10px 10px 20px;
                         border-radius: 0 5px 5px 0  ;
@@ -119,7 +119,7 @@
                         font-family: "heebo-bold";
                         text-transform: uppercase;
     
-                        &:focus{
+                        &:focus {
                             background-color: rgba(0, 0, 0, 0.010);
                             border-color: none !important;
                             color: rgb(48, 48, 48);
@@ -129,7 +129,7 @@
                     }
                 }
 
-                .booking_time{
+                .booking_time {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -137,11 +137,11 @@
                     padding-left: 0;
                     margin-bottom: 0;
 
-                    li{
+                    li {
                         list-style-type:none;
                         cursor: pointer;
 
-                        a{
+                        a {
                             font-family: "heebo-bold";
                             border: 1px solid #dddddd;
                             border-radius: 5px;
@@ -150,21 +150,21 @@
                             color: rgb(221, 221, 221);
                         }
 
-                        &:hover{
-                            a{
+                        &:hover {
+                            a {
                                 background-color: rgba(0, 0, 0, 0.020);
                             }
                         }
                     }
-                    .active{
-                        a{
+                    .active {
+                        a {
                             
                             transition: 0.2s;
                             background-color: $secondary-color;
                             color: white;
                             border: 1px solid $secondary-color;
 
-                            &:hover{
+                            &:hover {
                                 background-color: $secondary-color;
                             }
                         }
@@ -173,12 +173,12 @@
                 }
             }
 
-            .dropdown{
+            .dropdown {
                 margin-top: 6%;
                 margin-bottom: 6%;
                 height: 10%;
 
-                .btn-secondary{
+                .btn-secondary {
                     font-family: "heebo-bold";
                     background-color: white;
                     color: black;
@@ -186,12 +186,12 @@
                     height: 70px;
                 }
 
-                .dropdown-menu{
+                .dropdown-menu {
                     width: 100%;
                 }
             }
 
-            .booking_validation{
+            .booking_validation {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -202,13 +202,13 @@
                 text-decoration: none;
                 transition: 0.2s;
 
-                span{
+                span {
                     font-size: 20px;
                     font-family: "montserrat";
                     color: white;
                 }
 
-                &:hover{
+                &:hover {
                     background-color: rgb(175, 119, 197);
                 }
             }
@@ -218,79 +218,79 @@
 
 
 //Responsive Mobile
-@media (max-width: 600px) {
-    .top_discover{
-        .content_top{
+@media (max-width: 768px) {
+    .top_discover {
+        .content_top {
             align-items: center;
             margin-top: 35px;
 
-            img{
+            img {
                 width: 40%;
                 height: 11%;
             }
 
-            .introduction{
+            .introduction {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
 
-                a{
+                a {
                     margin-top: 0;
                     padding: 15px 32px;
                 }
 
-                p{
+                p {
                     font-size: 15px;
                     text-align: center;
                 }
             }
         }
 
-        .booking{
-            .booking_card{
+        .booking {
+            .booking_card {
                 width: 95%;
                 padding: 10% 6% 12% 6%;
 
-                .booking_informations{
-                    input{
+                .booking_informations {
+                    input {
                         margin: 3% 0px
                     }
                 }
 
-                .booking_dateTime{
-                    .booking_hours_title{
+                .booking_dateTime {
+                    .booking_hours_title {
                         align-self: flex-start !important;
                     }
 
-                    .booking_date{
+                    .booking_date {
                         width: 74%;
     
-                        img{
+                        img {
                             padding: 5%;
                         }
     
-                        input{
+                        input {
                             width: 79%;
                         }
                     }
 
-                    .booking_time{
+                    .booking_time {
                         flex-wrap: wrap;
                         width: 74%;
                         height: 112px;
 
-                        li{
+                        li {
                             width: 30%;
 
-                            a{
+                            a {
                                 padding: 10px 10px;
                             }
                         }
                     }
                 }
 
-                .dropdown{
-                    .btn-secondary{
+                .dropdown {
+                    .btn-secondary {
                         height: 50px;
                     }
                 }

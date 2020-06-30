@@ -13,20 +13,20 @@
     src: url(../fonts/Heebo-Bold.ttf);
 }
 
-h1{
+h1 {
     font-family: "montserrat";
     color: white;
     font-size: 56px !important;
     margin-bottom: 20px !important;
 }
 
-h2{
+h2 {
     font-family: "montserrat";
     color: $secondary-color;
     margin-bottom: 0 !important;
 }
 
-body{
+body {
     margin: 0px;
 }
 
@@ -35,13 +35,13 @@ body{
 }
 
 //Responsive Mobile
-@media (max-width: 600px) {
-    h1{
+@media (max-width: 768px) {
+    h1 {
         font-size: 26px !important;
         text-align: center;
     }
 
-    h2{
+    h2 {
         font-size: 28px !important;
     }
 }
