@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "jquery-appear-original": "^0.6.2",
-    "node-sass": "^4.14.1"
+    "node-sass": "^7.0.0"
   },
   "devDependencies": {},
   "scripts": {
